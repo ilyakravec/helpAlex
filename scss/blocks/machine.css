@@ -1,47 +1,44 @@
-.machine__btn {
+.machine__inner {
+  position: relative;
+}
+.machine__bg img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.machine__main {
+  max-width: 700px;
+}
+.machine__main img {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px 20px;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
 }
-.machine__img-button {
+.machine__placeholder {
   position: absolute;
-  bottom: 55px;
-  left: 78px;
-  max-width: 278px;
-  height: 80px;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
 }
-.machine__img-main {
-  position: relative;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  display: block;
-  max-width: 700px;
-  width: 100%;
-}
-.machine__img-waves {
+.machine__btn {
+  font-family: "Gabarito", sans-serif;
+  border: 5px white solid;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 10px 30px;
+  border-radius: 50px;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  max-width: 700px;
-  width: 100%;
-}
-.machine__img-light {
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  z-index: 3;
-  max-width: 500px;
-  width: 100%;
-}
-.machine__img-machine {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  z-index: 4;
-  max-width: 700px;
-  width: 100%;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
 }/*# sourceMappingURL=machine.css.map */

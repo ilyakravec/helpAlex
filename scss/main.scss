@@ -1,6 +1,19 @@
-@import "./blocks/machine.scss";
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+@import "../scss/blocks/machine.scss";
 
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
 }

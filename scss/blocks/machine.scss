@@ -1,65 +1,64 @@
 .machine {
 
-    &__btn {
-        position: absolute;
-        top: 0;
-        left: 0;
+    &__inner {
+        position: relative;
 
-        padding: 20px 20px;
     }
 
-    &__img-button {
-        position: absolute;
-        bottom: 55px;
-        left: 78px;
 
-        max-width: 278px;
-        height: 80px;
+    &__bg {
+
+        img {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__main {
+        max-width: 700px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+
+            display: block;
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    &__placeholder {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
         z-index: 5;
     }
 
-    &__img-main {
-        position: relative;
-        z-index: 1;
+    &__btn {
+        font-family: 'Gabarito', sans-serif;
 
-        top: 0;
-        left: 0;
+        border: 5px white solid;
+        background-color: red;
 
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
 
-        display: block;
-        max-width: 700px;
-        width: 100%;
-    }
+        padding: 10px 30px;
+        border-radius: 50px;
 
-    &__img-waves {
         position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%);
 
-        max-width: 700px;
-        width: 100%;
+        text-transform: uppercase;
     }
-
-    &__img-light {
-        position: absolute;
-        top: 100%;
-        left: 100%;
-        z-index: 3;
-
-        max-width: 500px;
-        width: 100%;
-    }
-
-    &__img-machine {
-        position: absolute;
-        top: -20px;
-        left: 0;
-        z-index: 4;
-
-        max-width: 700px;
-        width: 100%;
-    }
-
-
 }
